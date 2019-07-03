@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head>
+<title>Gebruikers inschrijven</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-inloggen.css">
+
+</head>
+<header>
+	<div class="header">
+		<h1>De Huizersclub</h1>
+	</div>
+	<div class="navbar">
+		<div class="navmenu">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="navmenu">
+			<a href="inschrijf-pagina.html">Inschrijven</a>
+		</div>
+		<div class="navmenu">
+			<a href="contact-pagina.html">Contact</a>
+		</div>
+		<div id="inloggen">
+			<a class="active" onclick="page_checker()">Inloggen</a>
+		</div>
+	</div>
+</header>
+<body>
+	<div class="row">
+		<form class="modal-" id="inschrijf_form" >
+			<div class="container">
+				<h1>Inschrijf Formulier</h1>
+				<p>Vul uw gegevens in en meld u aan als onze nieuwe kandidaat</p>
+				<hr>
+				<label for="voorletter"></label> 
+				<input type="text" placeholder="Voorletter" name="voorletter" required>
+				
+				<label for="tussenvoegsel"></label> 
+				<input type="text" placeholder="Tussenvoegsel" name="tussenvoegsel">
+
+				<label for="achternaam"></label> 
+				<input type="text" placeholder="Achternaam" name="achternaam" required> 
+
+				<label for="geboortedatum"></label> 
+				<input type="date" placeholder="Geboortedatum" name="geboortedatum" required>
+
+				<label for="gebruikersnaam"></label> 
+				<input type="text" placeholder="Gebruikersnaam" name="gebruikersnaam" required>
+
+				<label for="geslacht">
+				<input type="radio" name="geslacht" value="M" style=" margin-bottom: 15px" checked>Man</label> 
+
+				<label for="geslacht"> 
+				<input type="radio" name="geslacht" value="V" style="margin-bottom: 15px">Vrow</label> 
+
+				<label for="straatnaam"></label> 
+				<input type="text" placeholder="Straatnaam" name="straatnaam" required> 
+
+				<label for="huisnum"></label>
+				<input type="text" placeholder="Huis nummer" name="huisnummer" required>
+				
+				<label for="toevoeging"></label>
+				<input type="text" placeholder="toevoeging" name="toevoeging">
+				
+				<label for="plaats"></label> 
+				<input type="text" placeholder="woonplaats" name="plaats" required>
+
+				<label for="postcode"></label> 
+				<input type="text" placeholder="Post code" name="postcode" required> 
+				
+				<label for="telefoonnummer">
+				</label> <input type="text" placeholder="Telefoonnummer" name="telefoonnummer" required>
+				
+				<label for="email"></label> 
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="van"></label> 
+				<input type="date" placeholder="Van" name="van" required>
+
+				<label for="tot"></label>
+				<input type="date" placeholder="Tot" name="tot" required>
+
+				<label for="sport">Gewenste sport</label> <select id="sportId" name="sportId" required>
+					<option value="1">Voetbal</option>
+					<option value="2">Tennis</option>
+					<option value="3">Volyball</option>
+				</select> 
+
+				<label for="beschrijving"></label>
+				<textarea id="beschrijving" name="zelfbeschrijving" placeholder="Schrijf kort over uw zelf" style="height: 200px" required></textarea>
+
+				<p>
+					Ik heb een <a href="contact-pagina.html" style="color: dodgerblue">vraag</a>.
+				</p>
+
+				<div class="clearfix">
+					<button type="submit" class="aanmelden" id="aanmelden">Meld me aan</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="script/inschrijf_script.js"></script>
+
+
+</body>
+</html>

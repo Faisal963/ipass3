@@ -1,0 +1,244 @@
+/*header*/
+/*------------------------*/
+header {
+    padding: 60px;
+}
+header .header {
+  padding: 60px;
+  color: white;
+  text-align: center;
+  background: url(home-foto.jpg);
+  background-repeat: round;
+  background-size: auto;
+}
+header .navbar {
+  display: flow-root;
+  background-color: #333;
+}
+header .navbar a {
+  display: block;
+  color: white;
+  padding: 20px 16px 20px 16px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+header {
+  padding: 0% 0% 0% 0%;
+}
+
+header  a:hover:not(.active) {
+  background-color: #6e7a6c;
+}
+header  #inloggen .active:hover {
+  background-color: #55c446;
+}
+
+header #inloggen .active {
+  background-color: #4CAF50;
+}
+
+header  #uitloggen .active:hover {
+  opacity: 1;
+}
+
+header #uitloggen .active {
+  background-color: #ff0000;
+}
+
+header div .navmenu {
+  display: flex;
+  float:left;
+}
+header div #uitloggen, #inloggen {
+  display: flex;
+  float: right;
+}
+
+
+
+/*body*/
+/*-----------------------------------*/
+body {
+  font-family: Arial, 
+  Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  max-width: 90%;
+  background-color: #e8eaed;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number] ,input[type=date], textarea, select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,input[type=number]:focus , input[type=password]:focus,input[type=date]:focus ,select:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.verwijder {
+	background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background-color: #fff7e0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side1 {
+  flex: 80%;
+  background-color: #b4b6ba;
+  padding: 0px;
+}
+
+.side2 {
+  flex: 20%;
+  background-color: #698bce;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+tr:hover {
+  opacity:5;
+  back-ground: blue;
+}
+
+tr:nth-child(even) {
+  background-color: #c0c0c0;
+}
+
+/*small screens*/
+/* Change styles for all on extra small screens */
+@media screen and (max-width: 450px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+
+  }
+  body {
+    max-width:100%;
+  }
+  header .navbar, #inloggen, .navmenu {
+    display: flex;
+    flex-direction: column;
+  }
+  * {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+}

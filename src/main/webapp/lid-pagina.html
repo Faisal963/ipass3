@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+<title>DeHuizersSportClub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-inloggen.css">
+<link rel="stylesheet" type="text/css" href="style-admin.css">
+
+</head>
+<header>
+	<div class="header">
+		<h1>De Huizersclub</h1>
+	</div>
+	<div class="navbar">
+		<div class="navmenu">
+			<a href="lid-pagina.html">Mijn HuizersSportClub</a>
+		</div>
+		<div id="uitloggen">
+			<a class="active" onclick="uitloggen()">Uitloggen</a>
+		</div>
+
+	</div>
+</header>
+
+<body>
+
+	<div>
+		<form id="tooninfo" class="modal2">
+			<div class="container">
+				<div>
+				
+					<div>
+						<h3>Mijn gegevens</h3>
+					</div>
+					
+					<table>
+						<tr>
+							<td id="table_label">Voorletter:</td>
+							<td id="table_label"><input id="voorletter" name="voorletter"type="text" /></td>
+						</tr>
+						<tr>
+							<td id="table_label">Tussenvoegsel:</td>
+							<td id="table_label"><input id="tussenvoegsel" name="tussenvoegsel" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Achternaam:</td>
+							<td id="table_label"><input id="achternaam" name="achternaam" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Geslacht:</td>
+							<td id="table_label">
+								<label for="geslacht">
+								<input type="radio" name="geslacht" id="M" value="M" style="margin-bottom: 15px">Man</label> 
+
+								<label for="geslacht"> 
+								<input type="radio" name="geslacht" id="V" value="V" style="margin-bottom: 15px">Vrow</label> 
+							</td>
+						</tr>
+						<tr>
+							<td id="table_label">Gebruikersnaam:</td>
+							<td id="table_label"><input id="gebruikersnaam" name="gebruikersnaam" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Wachtwoord:</td>
+							<td id="table_label"><input id="wachtwoord" name="wachtwoord" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Geboortedatum:</td>
+							<td id="table_label"><input id="geboorte" name="geboorte" type="date"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Postcode:</td>
+							<td id="table_label"><input id="postcode" name="postcode" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Huisnummer:</td>
+							<td id="table_label"><input id="huisnummer" name="huisnummer" type="number"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Straatnaam:</td>
+							<td id="table_label"><input id="straat" name="straat" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Toevoeging:</td>
+							<td id="table_label"><input id="toevoeging" name="toevoeging" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Woonplaats:</td>
+							<td id="table_label"><input id="plaats" name="plaats" type="text"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Telefoon:</td>
+							<td id="table_label"><input id="telefoon"  name="telefoon" type="number"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Email:</td> 
+							<td id="table_label"><input id="email" name="email" type="text"/></td>
+						</tr>
+						
+						<tr>
+							<td><label><button id="wijzigbutton" type="button" >Wijzigingen opslaan</button></label></td>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="script/lid.js"></script>
+</body>
+</html>

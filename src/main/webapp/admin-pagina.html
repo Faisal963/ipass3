@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+<title>DeHuizersSportClub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-inloggen.css">
+<link rel="stylesheet" type="text/css" href="style-admin.css">
+
+</head>
+<header>
+	<div class="header">
+		<h1>De Huizersclub</h1>
+	</div>
+	<div class="navbar">
+		<div class="navmenu">
+			<a href="admin-pagina.html">Administratie</a>
+		</div>
+		<div id="uitloggen">
+			<a class="active" onclick="uitloggen()">Uitloggen</a>
+		</div>
+
+	</div>
+</header>
+
+<body>
+
+	<div>
+		<label><button class="tonen" onclick="show_form('true')">Toon aanvragen
+			</button></label>
+	</div>
+
+	<div>
+		<label><button class="tonen" onclick="show_form('false')">Toon leden</button></label>
+	</div>
+	<div>
+		<form id="toonleden" class="modal2">
+			<div class="container">
+				<div>
+					<h3 >Lid</h3>
+					<table>
+						<tr>
+							<td id="table_label">Voorletter:</td>
+							<td id="table_label"><input name="voorletter" id="voorletter"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Tussenvoegsel:</td>
+							<td id="table_label"><input name="tussenvoegsel" id="tussenvoegsel"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Achternaam:</td>
+							<td id="table_label"><input name="achternaam" id="achternaam"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Geslacht:</td>
+							<td id="table_label"><label for="geslacht">
+								<input type="radio" name="geslacht" id="M" value="M" style="margin-bottom: 15px">Man</label> 
+
+								<label for="geslacht"> 
+								<input type="radio" name="geslacht" id="V" value="V" style="margin-bottom: 15px">Vrow</label> 
+							</td>
+						</tr>
+						<tr>
+							<td id="table_label">Gebruikersnaam:</td>
+							<td id="table_label"><input name="gebruikersnaam" id="gebruikersnaam"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Geboortedatum:</td>
+							<td id="table_label"><input name="geboorte" id="geboorte"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Postcode:</td>
+							<td id="table_label"><input name="postcode" id="postcode"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Huisnummer:</td>
+							<td id="table_label"><input name="huisnummer" id="huisnummer"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Straatnaam:</td>
+							<td id="table_label"><input name="straat" id="straat"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Toevoeging:</td>
+							<td id="table_label"><input name="toevoeging" id="toevoeging"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Woonplaats:</td>
+							<td id="table_label"><input name="plaats" id="plaats"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Telefoon:</td>
+							<td id="table_label"><input name="telefoon" id="telefoon"/></td>
+						</tr>
+						<tr>
+							<td id="table_label">Email:</td>
+							<td id="table_label"><input name="email" id="email"/></td>
+						</tr>
+						
+						<tr>
+							<td><label><button id='wijzigbutton' type="button" > Wijzigingen opslaan</button></label></td>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+			<br>
+			<div id="leden_c" class="container">
+				<table id="leden">
+					<tr>
+						<th>Lid nummer</th><th>Lid naam</th><th>Bewerken</th>
+					</tr>
+				</table>
+			</div>
+		</form>
+		<br><br><br><br>
+		<form id="toonaanvragen" class="modal2">
+			<div class="container">
+				<h3>Kandidaat</h3>
+				<table id="aanvrager_info">
+					
+					<tr>
+						<th id="table_label2">Naam:</th>
+						<td id="table_label2"><label id="naam"></label></td>
+					</tr>
+					
+					<tr>
+						<th id="table_label">Geboortedatum:</th><td id="geboorte2"><label id="geboorte2"></label></td>
+					</tr>
+					
+					<tr>
+						<th id="table_label">Zelf beschrijving:</th>
+						<td id="table_label"><label id="zelfbeschrijving"></label></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<div id="aanvragers_c" class="container">
+				<table id="aanvragers">
+					<tr>
+						<th>Aanvrager nummer</th><th>Aanvrager naam</th><th>Bewerken</th>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div>
+		<form name="tooninschrijvingen" class="modal">
+			<div class="container"></div>
+		</form>
+	</div>
+	<script type="text/javascript" src="script/admin_script.js"></script>
+</body>
+</html>

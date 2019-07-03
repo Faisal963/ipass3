@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+<title>inloggen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-inloggen.css">
+</head>
+<body>
+	<div id="inlog_form" class="modsl">
+		<form class="modal-content" method="POST" id="login_form">
+			<div class="container">
+				<h1>Inloggen</h1>
+				<p>Vul uw inloggegevens in om in te loggen en door te gaan.</p>
+				<hr>
+				<label for="gebruikersnaam"><b>Email</b></label> <input type="text"
+					placeholder="Gebruikersnaam" name="gebruikersnaam" required>
+
+				<label for="wachtwoord"><b>Wachtwoord</b></label> <input
+					type="password" placeholder="Wachtwoord" name="wachtwoord" required>
+
+				<label> <input type="checkbox" checked="checked"
+					name="remember" style="margin-bottom: 15px"> Onthoud mijn
+					gegevens
+				</label>
+
+				<p>
+					Ik heb een probleem met inloggen<a href="#"
+						style="color: dodgerblue">Probleem melden</a>.
+				</p>
+
+				<div class="clearfix">
+					<button class="signupbtn" type="button" onclick="inloggen()" id="login_button">Inloggen</button>
+					<button type="button" onclick="annuleren()" class="cancelbtn">Annuleren</button>
+
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="script/inloggen_script.js"></script>
+</body>
+</html>

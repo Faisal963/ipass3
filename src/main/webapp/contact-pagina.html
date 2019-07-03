@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+<title>DeHuizersSportClub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-inloggen.css">
+</head>
+<header>
+	<div class="header">
+		<h1>De HuizersSportClub</h1>
+	</div>
+	<div class="navbar">
+		<div class="navmenu" id="menu">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="navmenu" id="menu">
+			<a href="inschrijf-pagina.html">Inschrijven</a>
+		</div>
+		<div class="navmenu" id="menu">
+			<a href="contact-pagina.html">Contact</a>
+		</div>
+		<div id="inloggen">
+			<a class="active" onclick="page_checker()">Inloggen</a>
+		</div>
+	</div>
+</header>
+
+<body>
+	<div class="row">
+		<div class="side1">
+			<div class="container">
+				<form class="modal-" id="vragen">
+					<div class="container">
+						<h3>Heeft u een vraag?</h3>
+						<p>Hier kunt u ons een bericht sturen met uw vragen</p>
+						<hr>
+						<label for="naam"></label> <input type="text" placeholder="Uw naam" name="naam"  required> 
+						
+						<label for="email"></label> <input type="text" placeholder="Uw email" name="email"  required> 
+						
+						<label for="onderwerp"></label> <input type="text" placeholder="Onderwerp" name="onderwerp"> 
+						
+						<label for="bericht"></label>
+						<textarea id="berichttext" name="bericht" placeholder="Schrijf uw bericht(vraag) hier" style="height: 200px"></textarea>
+
+						<div class="clearfix">
+							<button type="button" class="vragen" id="vragen">Verzenden</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript" src="script/inloggen_script.js"></script>
+		</div>
+		<div class="side2">
+			<h2>Veel gestelde vragen</h2>
+		</div>
+	</div>
+	<script type="text/javascript" src="script/contact_script.js"></script>
+	<script type="text/javascript" src="script/inloggen_script.js"></script>
+</body>
+</html>
